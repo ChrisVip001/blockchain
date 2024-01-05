@@ -20,7 +20,7 @@ impl Blockchain {
         // 链中的第一个块
         let mut genesis_block = Block {
             index: 0,
-            timeStamp: Utc::now().timestamp_millis() as u64,
+            time_stamp: Utc::now().timestamp_millis() as u64,
             proof_of_work: u64::default(),
             previous_hash: String::default(),
             hash: String::default()
